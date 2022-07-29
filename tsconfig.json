@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["es6"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,  
+    "module": "commonjs",
+    "rootDir": "src",
+    "moduleResolution": "node",
+    "allowJs": true,  
+    "declaration": true,
+    "outDir": "dist",
+    "removeComments": true,  
+    "noEmit": false,
+    "esModuleInterop": true, 
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.test.ts"
+  ]
+}

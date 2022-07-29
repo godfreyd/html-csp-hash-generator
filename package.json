@@ -1,0 +1,36 @@
+{
+  "name": "html-csp-hash-generator",
+  "version": "1.0.0",
+  "description": "Tool to generate hash for inline scripts and styles for CSP",
+  "scripts": {
+    "build": "npm run clear && npm run build:ts && npm run build:postbuild",
+    "build:ts": "tsc",
+    "build:postbuild": "cp package.json dist",
+    "lint": "tsc --noEmit",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "clear": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/godfreyd/html-csp-hash-generator.git"
+  },
+  "keywords": [
+    "CSP"
+  ],
+  "author": "Sergey Bocharov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/godfreyd/html-csp-hash-generator/issues"
+  },
+  "homepage": "https://github.com/godfreyd/html-csp-hash-generator#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/jest": "^28.1.6",
+    "@types/node": "^18.6.2",
+    "babel": "^6.23.0",
+    "jest": "^28.1.3",
+    "ts-node": "^10.9.1"
+  }
+}
